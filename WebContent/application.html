@@ -1,0 +1,120 @@
+
+<html>
+<head>
+<title>Application Form</title>
+
+<link rel="stylesheet" type="text/css" href="application.css" />
+</head>
+<body>
+
+
+
+	<form class="register"  enctype="multipart/form-data">
+
+		<div class="bg">
+
+
+			<fieldset class="row1">
+				<legend>Contact Details </legend>
+				<p>
+					<label>Email * </label> <input type="text" name="email" />
+				</p>
+				<p>
+					<label>Phone No* </label> <input type="text" name="phone" /> <label
+						class="optional">Web site </label> <input class="long" type="text"
+						value="http://" name="website" /> <label class="obinfo">*
+						obligatory fields </label>
+				</p>
+			</fieldset>
+			<fieldset class="row2">
+				<legend>Restaurant Details </legend>
+				<p>
+					<label>Restaurant Name * </label> <input type="text" class="long"
+						name="restaurant" />
+				</p>
+				<p>
+					<label>Full address * </label> <input type="text" maxlength="10"
+						name="address" />
+				</p>
+				<p>
+					<label class="optional">ESTD </label> <input type="text"
+						class="long" name="estd" />
+				</p>
+				<p>
+					<label> Pin code * </label> <input type="text" class="long"
+						name="pincode" />
+				</p>
+				<p>
+					<label>Country * </label> <select name="country">
+						<option></option>
+						<option value="1">India</option>
+					</select>
+				</p>
+
+			</fieldset>
+			<fieldset class="row3">
+				<legend>Further Information </legend>
+				<p>
+					<label>Restaurant type * </label> <select name="restauranttype">
+						<option></option>
+						<option value="1">Chinese</option>
+						<option value="2">Bengali</option>
+						<option value="3">Continental</option>
+						<option value="4">South ndian</option>
+						<option value="5">Cafe</option>
+						<option value="6">Fast food</option>
+						<option value="7">Italian</option>
+						<option value="8">Others</option>
+					</select>
+				</p>
+				<br /> <br />
+				<p>
+					<label>Description* </label> <input type="text" name="description" />
+				</p>
+
+				<p>
+					<br /> <br /> <label>Time duration * </label> <select
+						name="userperiod">
+						<option></option>
+						<option value="0">For 1 month</option>
+						<option value="1">For 2 month</option>
+						<option value="1">For 6 month</option>
+						<option value="1">For 8 month</option>
+						<option value="1">For 1 year</option>
+					</select>
+				</p>
+				<br /> <br />
+				<p>
+					<label>Upload photos: * </label> <input type="file" name="myFile"/>
+					
+				</p>
+
+
+			</fieldset>
+			<fieldset class="row4">
+				<legend> * Terms and Conditions </legend>
+				<p class="agreement">
+					<label>o Any information fault only i'll be responsible </label>
+				</p>
+				<p class="agreement">
+					<label>o 15% will get the web site in case of offers from
+						the restaurant if game posted</label>
+				</p>
+				<p class="agreement">
+					<label>o Ready to pay for my requirements</label>
+				</p>
+				<p class="agreement">
+					<input type="checkbox" value="" name="userCheck" /> <label>I
+						Accept</label>
+				</p>
+			</fieldset>
+			<div>
+			
+				<button class="button"><a href="payment.html">Done &raquo;</a></button>
+			
+			</div>
+
+		</div>
+	</form>
+</body>
+</html>

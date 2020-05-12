@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Index page </title>
+<link rel="stylesheet" href="R_owner.css">
+
+<link rel="stylesheet" href="naV.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:5px;width:15px;padding:0}
+</style>
+</head>
+
+<body>
+<header id="slider-area">
+		<nav
+			class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
+			<div class="container">
+			
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+				 <a  href="welcome.html" id="logo">Vertising<font color="white">_</font>Inn</a>
+					<ul class="navbar-nav mr-auto w-100 justify-content-end">
+					
+						<li class="nav-item"><a class="nav-link page-scroll"
+							href="#slider-area">Home</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll"
+							href="#services">Services</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll"
+							href="login2.jsp">Log in/ Sign up</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll"
+							href="application.jsp">Request a advertisement</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll"
+							href="">your page</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll"
+							href="#contact">Let's talk</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll"
+							href="#team">Our team</a></li>
+					</ul>
+					</div>
+					</div>
+					</nav>
+					<!-- Main Carousel Section -->
+		
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="s1.jpg" style="width:100%">
+  <img class="mySlides" src="s2.jpg" style="width:100%">
+  <img class="mySlides" src="s3.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+		</header>
+		
+		<!-- Header Section End -->
+
+	<!-- Start Video promo Section -->
+	<section class="video-promo section">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="video-promo-content text-center">
+						<a href="https://www.youtube.com/embed/LSgBpbgTlhw"
+							class="video-popup"><i class="lni-film-play"></i></a>
+						<h2 class="wow zoomIn" data-wow-duration="1000ms"
+							data-wow-delay="100ms">Our Introductory Video</h2>
+						<p class="wow zoomIn" data-wow-duration="1000ms"
+							data-wow-delay="100ms">Learn more about us, its only 30mins</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Video Promo Section -->
+	
+	<!-- Services Section Start -->
+	<section id="services" class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Our Services</h2>
+				
+				<p class="section-subtitle">Lorem ipsum dolor sit amet,
+					consectetuer adipiscing elit, sed diam nonummy</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-xs-12">
+					<div class="item-boxes services-item wow fadeInDown"
+						data-wow-delay="0.2s">
+						<div class="icon color-1">
+							<i class="lni-pencil"></i>
+						</div>
+						<h4>Digital Advertising</h4>
+						<p> Online advertising is available. Any restaurant
+						can request for advertising with respective payment</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-xs-12">
+					<div class="item-boxes services-item wow fadeInDown"
+						data-wow-delay="0.4s">
+						<div class="icon color-2">
+							<i class="lni-cog"></i>
+						</div>
+						<h4>Animated movie</h4>
+						<p> we will provide a short animated movie on the basis of
+						the provided information by the restaurant. </p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-xs-12">
+					<div class="item-boxes services-item wow fadeInDown"
+						data-wow-delay="0.6s">
+						<div class="icon color-3">
+							<i class="lni-stats-up"></i>
+						</div>
+						<h4>Restaurant details</h4>
+						<p> Restaurants can give any kind of information details on 
+						their several pages after giving advertisement in our site</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-xs-12">
+					<div class="item-boxes services-item wow fadeInDown"
+						data-wow-delay="0.8s">
+						<div class="icon color-4">
+							<i class="lni-layers"></i>
+						</div>
+						<h4>Upload games</h4>
+						<p>We will provide fun games for the visitors on basis of offers 
+						provided by the restaurants</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-xs-12">
+					<div class="item-boxes services-item wow fadeInDown"
+						data-wow-delay="1s">
+						<div class="icon color-5">
+							<i class="lni-tab"></i>
+						</div>
+						<h4> Increase Popularity</h4>
+						<p>Attracted animated movie and fun games will help the restaurants 
+						to increase popularity among visitors</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-xs-12">
+					<div class="item-boxes services-item wow fadeInDown"
+						data-wow-delay="1.2s">
+						<div class="icon color-6">
+							<i class="lni-briefcase"></i>
+						</div>
+						<h4>Buisness Profit</h4>
+						<p> Restaurants will get profit by giving advertisements
+						and games for people which will help to make more customer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services Section End -->
+	
+	
+	<section id="contact" class="section">
+		<div class="contact-form">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Let's Talk</h2>
+					
+					<p class="section-subtitle">Ask your queries regarding our web site </p>
+				</div>
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-xs-12">
+						<div class="contact-block">
+							<form id="contactForm">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name"
+												placeholder="Your Name" required
+												data-error="Please enter your name">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" placeholder="Your Email" id="email"
+												class="form-control" name="name" required
+												data-error="Please enter your email">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Subject" id="msg_subject"
+												class="form-control" required
+												data-error="Please enter your subject">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea class="form-control" id="message"
+												placeholder="Your Message" rows="7"
+												data-error="Write your message" required></textarea>
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="submit-button">
+											<button class="btn btn-common btn-effect" id="submit"
+												type="submit">Send Message</button>
+											<div id="msgSubmit" class="h3 hidden"></div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+	</section>					
+					
+					
+					<!-- Team section Start -->
+	<section id="team" class="section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Our Team</h2>
+			
+				<p class="section-subtitle">Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit. Dignissimos debitis.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-xs-12">
+					<div class="single-team">
+						<img src="img/team/team1.png" alt="">
+						<div class="team-details">
+							<div class="team-inner">
+								<h4 class="team-title">Pushpita Ganguly</h4>
+								<p>Web developer</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Team section End -->
+	
+	
+	
+		<!-- Go To Top Link -->
+	<a href="#" class="back-to-top"> <i class="lni-arrow-up"></i>
+	</a>
+
+	
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script type="text/javascript" src="R_owner.js"></script>
+	
+
+</body>
+</html>

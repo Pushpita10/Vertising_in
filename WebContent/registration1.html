@@ -1,0 +1,155 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript">
+	
+	
+	
+	
+	
+	
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+
+
+
+
+
+
+</script>
+<!-- Custom Theme files -->
+<link href="css/registration.css" rel="stylesheet" type="text/css"
+	media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link
+	href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i"
+	rel="stylesheet">
+<title>User Data</title>
+</head>
+
+<body>
+
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>SignUp </h1>
+		<h1>${message}</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="Registration" method="post">
+				<input class="text" type="text" name="fullname"
+						placeholder="Enter your full name" required="">
+					<input
+						class="text email" type="email" name="email" placeholder="Email"
+						required=""> 
+						<input class="text" type="text" name="username"
+						placeholder="Username" required=""> 
+						<input class="text w3lpass" type="password"
+						name="pass" placeholder="******" required=""> <input
+						class="text w3lpass" type="password" name="repass"
+						placeholder="Confirm Password" required="">
+					<div class="wthree-text">
+						<label class="WebContent/registration.html.admin"> <input
+							type="checkbox" class="checkbox" required=""> <span>I
+								Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"></div>
+					</div>
+					<input type="submit" value="SIGNUP" onclick="return Validate()">
+				</form>
+				<p>
+				 <a href="LoginPage.html"> Login Now!!</a>
+				</p>
+			</div>
+		</div>
+		
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		function Validate() {
+			var pass = document.getElementById("txtpass").value;
+			var repass = document.getElementById("txtrepass").value;
+			if (pass != repass) {
+				alert("passwords do not match!!!");
+			}
+			return true;
+		}
+	</script>
+	<!-- //main -->
+
+
+
+
+
+
+
+	<!--<h1>Registration Form</h1>
+	<div class="ex">
+		<form action="Registration" method="post">
+			<table style="with: 50%">
+				<tr>
+					<td>Full Name</td>
+					<td><input type="text" name="fullname" /></td>
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="userName" /></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="pass" /></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" name="address" /></td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td><input type="text" name="age" /></td>
+				</tr>
+				<tr>
+					<td>Qualification</td>
+					<td><input type="text" name="qual" /></td>
+				</tr>
+				<tr>
+					<td>Percentage</td>
+					<td><input type="text" name="percent" /></td>
+				</tr>
+				<tr>
+					<td>Year Passed</td>
+					<td><input type="text" name="yop" /></td>
+				</tr>
+
+			</table>
+			<input type="submit" value="register" />
+		</form>
+		<br> create a student table in test database before registering
+		this form <br> Syntax : <br> <i>create table
+			student(name varchar(100), userName varchar(100), pass varchar(100),
+			addr varchar(100), age int, qual varchar(100), percent varchar(100),
+			year varchar(100));</i>
+
+	</div>-->
+</body>
+</html>
